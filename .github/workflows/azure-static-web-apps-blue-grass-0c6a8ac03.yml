@@ -34,8 +34,8 @@ jobs:
            result-encoding: string
       - name: Set Node.js Version
         uses: actions/setup-node@v4
-        with:
-          node-version: '20' # CECI EST L'AJOUT CLÉ
+        with:
+          node-version: '20' # CECI EST L'AJOUT CLÉ
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -60,5 +60,6 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
 

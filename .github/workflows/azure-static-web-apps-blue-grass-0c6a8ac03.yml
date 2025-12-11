@@ -32,7 +32,7 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
-        - name: Set Node.js Version
+      - name: Set Node.js Version
         uses: actions/setup-node@v4
         with:
           node-version: '20' # CECI EST L'AJOUT CLÉ
@@ -60,4 +60,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
